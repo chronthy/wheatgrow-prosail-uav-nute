@@ -1,9 +1,9 @@
 # WheatGrow–PROSAIL–UAV NUtE demo
 
-A self-contained, runnable demonstration of the framework described in:
-“An integrated WheatGrow-PROSAIL framework assimilating UAV multispectral data for plot-scale winter wheat nitrogen utilization efficiency prediction and cultivar-specific parameter inversion” DOI:  https://doi.org/10.1016/j.plaphe.2026.100301
+> A self-contained, runnable demonstration of the framework described in:
+> “An integrated WheatGrow-PROSAIL framework assimilating UAV multispectral data for plot-scale winter wheat nitrogen utilization efficiency prediction and cultivar-specific parameter inversion” DOI:  https://doi.org/10.1016/j.plaphe.2026.100301
 
-The demo reproduces the full analytical chain — JPDS sampling → PROSAIL-type forward simulation → LUT construction → SLA/AMAX retrieval from six-band reflectance → WheatGrow-type assimilation → NUtE prediction → accuracy evaluation — on a small synthetic dataset.
+> The demo reproduces the full analytical chain — JPDS sampling → PROSAIL-type forward simulation → LUT construction → SLA/AMAX retrieval from six-band reflectance → WheatGrow-type assimilation → NUtE prediction → accuracy evaluation — on a small synthetic dataset.
 
 # Scope and limitations (please read first)
 This repository is a method demonstration. It contains no raw UAV imagery, ground hyperspectral measurements, field observations, or WheatGrow source code from the manuscript. src/prosail_simple.py is a simplified, pedagogical forward model, not a radiative-transfer model. It is intentionally written with the same input signature as PROSAIL so it can be swapped for the official PROSAIL/PROSAIL-Py implementation. src/wheatgrow_proxy.py is a transparent surrogate standing in for the WheatGrow interface. Replace predict_nute with a wrapper around the official model for production runs. demo_data/ is synthetic. Results obtained with it validate that the pipeline runs; they carry no agronomic meaning and must not be compared with the numbers reported in the paper.
