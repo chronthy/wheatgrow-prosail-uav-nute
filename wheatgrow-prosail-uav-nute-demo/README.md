@@ -1,9 +1,9 @@
-### WheatGrow–PROSAIL–UAV NUtE demo
+# WheatGrow–PROSAIL–UAV NUtE demo
 
 A self-contained, runnable demonstration of the framework described in:
 “An integrated WheatGrow-PROSAIL framework assimilating UAV multispectral data for plot-scale winter wheat nitrogen utilization efficiency prediction and cultivar-specific parameter inversion” DOI:  https://doi.org/10.1016/j.plaphe.2026.100301
 
-# The demo reproduces the full analytical chain — JPDS sampling → PROSAIL-type forward simulation → LUT construction → SLA/AMAX retrieval from six-band reflectance → WheatGrow-type assimilation → NUtE prediction → accuracy evaluation — on a small synthetic dataset.
+The demo reproduces the full analytical chain — JPDS sampling → PROSAIL-type forward simulation → LUT construction → SLA/AMAX retrieval from six-band reflectance → WheatGrow-type assimilation → NUtE prediction → accuracy evaluation — on a small synthetic dataset.
 
 # Scope and limitations (please read first)
 This repository is a method demonstration. It contains no raw UAV imagery, ground hyperspectral measurements, field observations, or WheatGrow source code from the manuscript. src/prosail_simple.py is a simplified, pedagogical forward model, not a radiative-transfer model. It is intentionally written with the same input signature as PROSAIL so it can be swapped for the official PROSAIL/PROSAIL-Py implementation. src/wheatgrow_proxy.py is a transparent surrogate standing in for the WheatGrow interface. Replace predict_nute with a wrapper around the official model for production runs. demo_data/ is synthetic. Results obtained with it validate that the pipeline runs; they carry no agronomic meaning and must not be compared with the numbers reported in the paper.
@@ -47,8 +47,7 @@ End-to-end runtime is well under two minutes. A smoke test is available:
 pytest -q
 
 # Expected demo output
-With the default seed and 5 000 LUT entries, the demo reproduces the pipeline
-with the following accuracy on the synthetic data (illustrative only):
+With the default seed and 5 000 LUT entries, the demo reproduces the pipeline with the following accuracy on the synthetic data (illustrative only):
 Variable
 RMSE
 RRMSE
@@ -75,10 +74,10 @@ concept DOI 10.5281/zenodo.24299067,
 version DOI 10.5281/zenodo.24299068.
 It is intended as the companion code for the manuscript. Raw data and the WheatGrow model are not included, for the reasons stated in the Data Availability Statement of the paper.
 
-License
+# License
 Code: MIT (see LICENSE). Demo data: CC BY 4.0.
 
-Citation
+# Citation
 If you use this demo, please cite the archived release:
 Tao, H., & Tian, Y. (2026). WheatGrow–PROSAIL–UAV NUtE demo framework(v0.1.0). Zenodo. https://doi.org/10.5281/zenodo.24299067
 See CITATION.cff for machine-readable metadata. Please also cite the manuscript once it is published.
