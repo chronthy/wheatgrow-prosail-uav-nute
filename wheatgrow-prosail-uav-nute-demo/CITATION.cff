@@ -5,12 +5,15 @@ abstract: "Runnable demonstration of a WheatGrow-PROSAIL coupled framework for p
 authors:
   - family-names: "Tao"
     given-names: "Haiyu"
+    affiliation: "National Engineering and Technology Center for Information Agriculture, Nanjing Agricultural University"
   - family-names: "Tian"
     given-names: "Yongchao"
+    affiliation: "National Engineering and Technology Center for Information Agriculture, Nanjing Agricultural University"
 version: "0.1.0"
-date-released: "2026-11-16"
+doi: "10.5281/zenodo.24299067"
+date-released: "2026-11-17"
 license: "MIT"
-repository-code: "https://github.com/<username>/wheatgrow-prosail-uav-nute-demo"
+repository-code: "https://github.com/chronthy/wheatgrow-prosail-uav-nute"
 keywords:
   - wheat
   - PROSAIL
