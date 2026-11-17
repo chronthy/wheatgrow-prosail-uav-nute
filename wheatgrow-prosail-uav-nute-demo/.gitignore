@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+
+# generated results
+outputs/*.csv
+outputs/*.png
+!outputs/.gitkeep
+
+# local environments
+.venv/
+venv/

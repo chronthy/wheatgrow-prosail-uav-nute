@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this demo framework, please cite the manuscript and this repository."
+title: "WheatGrow-PROSAIL-UAV NUtE demo framework"
+abstract: "Runnable demonstration of a WheatGrow-PROSAIL coupled framework for plot-scale winter wheat NUtE prediction from UAV-type multispectral reflectance."
+authors:
+  - family-names: "Tao"
+    given-names: "Haiyu"
+  - family-names: "Tian"
+    given-names: "Yongchao"
+version: "0.1.0"
+date-released: "2026-11-16"
+license: "MIT"
+repository-code: "https://github.com/<username>/wheatgrow-prosail-uav-nute-demo"
+keywords:
+  - wheat
+  - PROSAIL
+  - WheatGrow
+  - UAV
+  - nitrogen use efficiency
+  - plant phenomics
